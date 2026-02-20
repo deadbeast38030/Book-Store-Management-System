@@ -23,9 +23,11 @@ def ADD():
     C.execute("INSERT INTO available_books VALUES (%s,%s,%s,%s,%s,%s)",
               (book, genre, quantity, author, publication, price))
     DB.commit()
-
-    print("++++ SUCCESSFULLY ADDED ++++")
-
+    
+    print("++++++++++++++++++++++++++++++++++++++++++++")
+    print("++++++++++++ SUCCESSFULLY ADDED ++++++++++++")
+    print("++++++++++++++++++++++++++++++++++++++++++++")
+    
     n = int(input("1. Continue\n2. Back\nEnter: "))
     if n == 1:
         ADD()
@@ -43,8 +45,10 @@ def NewStaff():
     C.execute("INSERT INTO staff_details VALUES (%s,%s,%s,%s,%s)",
               (fname, gender, age, phno, add))
     DB.commit()
-
-    print("++++ STAFF SUCCESSFULLY ADDED ++++")
+    
+    print("++++++++++++++++++++++++++++++++++++++++++++++++++")
+    print("++++++++++++ STAFF SUCCESSFULLY ADDED ++++++++++++")
+    print("++++++++++++++++++++++++++++++++++++++++++++++++++")
 
     n = int(input("1. Continue\n2. Back\nEnter: "))
     if n == 1:
@@ -78,8 +82,8 @@ def StaffDetail():
         print("Age:", x[2])
         print("Phone:", x[3])
         print("Address:", x[4])
-        print("-----------------------------")
-
+        print("---------------------------------------------------")
+        print("---------------------------------------------------")
     input("Press Enter to go back...")
     Staff()
 
@@ -95,8 +99,8 @@ def AvailableBooks():
         print("Author:", x[3])
         print("Publication:", x[4])
         print("Price:", x[5])
-        print("-----------------------------")
-
+        print("---------------------------------------------------")
+        print("---------------------------------------------------")
     input("Press Enter to go back...")
     Staff()
 
@@ -111,8 +115,8 @@ def SellRec():
         print("Book:", x[2])
         print("Quantity:", x[3])
         print("Price:", x[4])
-        print("-----------------------------")
-
+        print("---------------------------------------------------")
+        print("---------------------------------------------------")
     input("Press Enter to go back...")
     Staff()
 
@@ -164,8 +168,9 @@ def Purchase():
               (quantity, book))
 
     DB.commit()
-
-    print("++++ BOOK SOLD SUCCESSFULLY ++++")
+    print("++++++++++++++++++++++++++++++++++++++++++++++++")
+    print("++++++++++++ BOOK SOLD SUCCESSFULLY ++++++++++++")
+    print("++++++++++++++++++++++++++++++++++++++++++++++++")
     Buyer()
 
 
@@ -224,8 +229,9 @@ def Staff():
 
 
 # ================= MAIN PROGRAM ================= #
-
-print("******** WELCOME TO BOOK STORE ********")
+print("*****************************************************************")
+print("**************** WELCOME TO MANISH 'S BOOK STORE ****************")
+print("*****************************************************************")
 
 while True:
     print("""
@@ -241,4 +247,5 @@ while True:
     elif main_choice == 2:
         Buyer()
     else:
+
         break
