@@ -10,7 +10,7 @@ A complete Book Store Management System built using Python and MySQL.
 - View Staff Details
 - View Available Books
 - Sell Record Tracking
-- Total Income Calculation
+- Total Income Generated
 
 ### 🛒 Buyer Panel
 - View Available Books
@@ -32,4 +32,5 @@ A complete Book Store Management System built using Python and MySQL.
    python book_store.py
 
 ## 👨‍💻 Author
+
 Manish Debnath
